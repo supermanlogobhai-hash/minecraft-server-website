@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Minecraft Shop</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+
+.shop-title{
+    color:#55ff55;
+    font-size:40px;
+    text-shadow:3px 3px black;
+}
+
+
+.item{
+
+    display:inline-block;
+    width:250px;
+    margin:20px;
+    padding:25px;
+    background:#222;
+    border:3px solid #55ff55;
+    border-radius:15px;
+    box-shadow:0 0 15px #55ff55;
+
+}
+
+
+.item h2{
+    color:#ffff55;
+}
+
+
+button{
+
+    background:#00c853;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+
+}
+
+
+button:hover{
+
+    background:#00ff66;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<h1 class="shop-title">⛏️ Minecraft Server Shop</h1>
+
+
+<div class="item">
+
+<h2>👑 VIP Rank</h2>
+
+<p>Special Chat Color</p>
+<p>Price: ₹99</p>
+
+<button onclick="buy(99)">
+Buy Now
+</button>
+
+</div>
+
+
+
+<div class="item">
+
+<h2>💎 MVP Rank</h2>
+
+<p>Extra Commands</p>
+<p>Price: ₹199</p>
+
+<button onclick="buy(199)">
+Buy Now
+</button>
+
+</div>
+
+
+
+<div class="item">
+
+<h2>🟢 Creeper Badge</h2>
+
+<p>Special Profile Badge</p>
+<p>Price: ₹49</p>
+
+<button onclick="buy(49)">
+Buy Now
+</button>
+
+</div>
+
+
+
+<div class="item">
+
+<h2>💀 Zombie Badge</h2>
+
+<p>Survival Badge</p>
+<p>Price: ₹79</p>
+
+<button onclick="buy(79)">
+Buy Now
+</button>
+
+</div>
+
+
+
+<script>
+
+function buy(price){
+
+window.location.href="payment.html?amount="+price;
+
+}
+
+</script>
+
+
+</body>
+
+</html>
